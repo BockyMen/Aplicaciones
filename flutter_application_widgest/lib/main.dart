@@ -17,11 +17,19 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: appTitle,
       home: Scaffold(
-        appBar: AppBar(title: const Text(appTitle)),
+        appBar: AppBar(),
         body: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(Icons.arrow_back, color: Colors.blue, size: 30),
+                  Text("Aplicacion de Flutter"),
+                  Icon(Icons.star, color: Color.fromARGB(255, 150, 147, 0), size: 30),
+                ],
+              ),
               Image(
                 image: NetworkImage(
                   'https://biblioteca.acropolis.org/wp-content/uploads/2022/05/simbolismo-buho.jpg',
@@ -34,12 +42,8 @@ class MainApp extends StatelessWidget {
                     'Oeschinen Lake Campground',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  Icon(
-                    Icons.star,
-                    color: Color.fromARGB(255, 248, 190, 0),
-                    size: 30.0,
-                  ),
-                  Text('41'),
+                  Icon(Icons.star, color: Color.fromARGB(255, 194, 181, 0), size: 30.0),
+                  Text('4.1'),
 
                   /* Text('Kandersteg, Swizerland',
                   style: TextStyle(fontWeight: FontWeight.bold),),*/
@@ -48,9 +52,9 @@ class MainApp extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Icon(Icons.phone, color: Colors.blue, size: 40.0),
-                  Icon(Icons.send, color: Colors.blue, size: 40.0),
-                  Icon(Icons.share, color: Colors.blue, size: 40.0),
+                  Icon(Icons.phone, color: Colors.blue, size: 40),
+                  Icon(Icons.send, color: Colors.blue, size: 40),
+                  Icon(Icons.share, color: Colors.blue, size: 40),
                 ],
               ),
               Row(
@@ -81,6 +85,19 @@ class MainApp extends StatelessWidget {
               ),
               Text(
                 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum',
+                style: TextStyle(fontSize: 12),
+                textAlign: TextAlign.justify,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Icon(Icons.add_shopping_cart, color: Colors.blue, size: 30),
+                  Icon(
+                    Icons.favorite,
+                    color: Color.fromARGB(255, 243, 33, 33),
+                    size: 30,
+                  ),
+                ],
               ),
             ],
           ),
