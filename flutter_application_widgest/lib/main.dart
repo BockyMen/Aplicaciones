@@ -91,6 +91,15 @@ class MainApp extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Icon(Icons.circle, color: Color.fromARGB(255, 229, 243, 33), size: 30),
+                  Icon(Icons.circle, color: Color.fromARGB(255, 0, 25, 165), size: 30),
+                  Icon(Icons.circle, color: Color.fromARGB(255, 243, 33, 33), size: 30),
+                  Icon(Icons.circle, color: Color.fromARGB(255, 75, 255, 84), size: 30),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
                   Icon(Icons.add_shopping_cart, color: Colors.blue, size: 30),
                   Icon(
                     Icons.favorite,
